@@ -7,21 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		631F466C1E33B6E100D59FDF /* CICHomeTabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F466B1E33B6E100D59FDF /* CICHomeTabBarControllerViewController.swift */; };
+		631F466F1E33BCF800D59FDF /* APITaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F466D1E33BCF800D59FDF /* APITaskManager.swift */; };
+		631F46701E33BCF800D59FDF /* APIUTils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F466E1E33BCF800D59FDF /* APIUTils.swift */; };
+		631F46761E33BD2500D59FDF /* ICOListaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46711E33BD2500D59FDF /* ICOListaTableViewController.swift */; };
+		631F46771E33BD2500D59FDF /* ICODetalleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46721E33BD2500D59FDF /* ICODetalleCollectionViewController.swift */; };
+		631F46781E33BD2500D59FDF /* ICOHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46731E33BD2500D59FDF /* ICOHeaderCollectionReusableView.swift */; };
+		631F46791E33BD2500D59FDF /* ICOTaskCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46741E33BD2500D59FDF /* ICOTaskCustomCell.swift */; };
+		631F467A1E33BD2500D59FDF /* ICOIconCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46751E33BD2500D59FDF /* ICOIconCollectionViewCell.swift */; };
+		631F467E1E33BFA100D59FDF /* Contactos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 631F467D1E33BFA100D59FDF /* Contactos.plist */; };
+		631F46891E33BFC300D59FDF /* backPerfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 631F467F1E33BFC300D59FDF /* backPerfil.png */; };
+		631F468A1E33BFC300D59FDF /* brad-pitt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 631F46801E33BFC300D59FDF /* brad-pitt.jpg */; };
+		631F468B1E33BFC300D59FDF /* depp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 631F46811E33BFC300D59FDF /* depp.jpg */; };
+		631F468C1E33BFC300D59FDF /* fondodegradado.png in Resources */ = {isa = PBXBuildFile; fileRef = 631F46821E33BFC300D59FDF /* fondodegradado.png */; };
+		631F468D1E33BFC300D59FDF /* kunis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 631F46831E33BFC300D59FDF /* kunis.jpg */; };
+		631F468E1E33BFC300D59FDF /* Miranda_Lambert.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 631F46841E33BFC300D59FDF /* Miranda_Lambert.jpg */; };
+		631F468F1E33BFC300D59FDF /* Sara_Evans.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 631F46851E33BFC300D59FDF /* Sara_Evans.jpg */; };
+		631F46901E33BFC300D59FDF /* steve_jobs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 631F46861E33BFC300D59FDF /* steve_jobs.jpg */; };
+		631F46911E33BFC300D59FDF /* Taylor_Swift2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 631F46871E33BFC300D59FDF /* Taylor_Swift2.jpg */; };
+		631F46921E33BFC300D59FDF /* thor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 631F46881E33BFC300D59FDF /* thor.jpg */; };
+		631F46981E33C04C00D59FDF /* ICOContactosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46951E33C04C00D59FDF /* ICOContactosTableViewController.swift */; };
+		631F46991E33C04C00D59FDF /* ICODetalleContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46961E33C04C00D59FDF /* ICODetalleContactoViewController.swift */; };
+		631F469A1E33C04C00D59FDF /* ICOContactosCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46971E33C04C00D59FDF /* ICOContactosCustomCell.swift */; };
+		631F46A71E3D051000D59FDF /* ICOPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46A61E3D050F00D59FDF /* ICOPerfilViewController.swift */; };
 		63FFBC591E2D80FC0097246A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FFBC581E2D80FC0097246A /* AppDelegate.swift */; };
-		63FFBC5B1E2D80FC0097246A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FFBC5A1E2D80FC0097246A /* ViewController.swift */; };
 		63FFBC5E1E2D80FC0097246A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FFBC5C1E2D80FC0097246A /* Main.storyboard */; };
 		63FFBC601E2D80FC0097246A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FFBC5F1E2D80FC0097246A /* Assets.xcassets */; };
 		63FFBC631E2D80FC0097246A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FFBC611E2D80FC0097246A /* LaunchScreen.storyboard */; };
+		63FFBC6B1E2D8BD70097246A /* CICIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FFBC6A1E2D8BD70097246A /* CICIntroViewController.swift */; };
+		63FFBC6D1E2D8BE40097246A /* CICLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FFBC6C1E2D8BE40097246A /* CICLoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		631F466B1E33B6E100D59FDF /* CICHomeTabBarControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CICHomeTabBarControllerViewController.swift; sourceTree = "<group>"; };
+		631F466D1E33BCF800D59FDF /* APITaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APITaskManager.swift; sourceTree = "<group>"; };
+		631F466E1E33BCF800D59FDF /* APIUTils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUTils.swift; sourceTree = "<group>"; };
+		631F46711E33BD2500D59FDF /* ICOListaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOListaTableViewController.swift; sourceTree = "<group>"; };
+		631F46721E33BD2500D59FDF /* ICODetalleCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICODetalleCollectionViewController.swift; sourceTree = "<group>"; };
+		631F46731E33BD2500D59FDF /* ICOHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		631F46741E33BD2500D59FDF /* ICOTaskCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOTaskCustomCell.swift; sourceTree = "<group>"; };
+		631F46751E33BD2500D59FDF /* ICOIconCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOIconCollectionViewCell.swift; sourceTree = "<group>"; };
+		631F467D1E33BFA100D59FDF /* Contactos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Contactos.plist; sourceTree = "<group>"; };
+		631F467F1E33BFC300D59FDF /* backPerfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backPerfil.png; sourceTree = "<group>"; };
+		631F46801E33BFC300D59FDF /* brad-pitt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "brad-pitt.jpg"; sourceTree = "<group>"; };
+		631F46811E33BFC300D59FDF /* depp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = depp.jpg; sourceTree = "<group>"; };
+		631F46821E33BFC300D59FDF /* fondodegradado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondodegradado.png; sourceTree = "<group>"; };
+		631F46831E33BFC300D59FDF /* kunis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kunis.jpg; sourceTree = "<group>"; };
+		631F46841E33BFC300D59FDF /* Miranda_Lambert.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Miranda_Lambert.jpg; sourceTree = "<group>"; };
+		631F46851E33BFC300D59FDF /* Sara_Evans.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sara_Evans.jpg; sourceTree = "<group>"; };
+		631F46861E33BFC300D59FDF /* steve_jobs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = steve_jobs.jpg; sourceTree = "<group>"; };
+		631F46871E33BFC300D59FDF /* Taylor_Swift2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Taylor_Swift2.jpg; sourceTree = "<group>"; };
+		631F46881E33BFC300D59FDF /* thor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thor.jpg; sourceTree = "<group>"; };
+		631F46951E33C04C00D59FDF /* ICOContactosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOContactosTableViewController.swift; sourceTree = "<group>"; };
+		631F46961E33C04C00D59FDF /* ICODetalleContactoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICODetalleContactoViewController.swift; sourceTree = "<group>"; };
+		631F46971E33C04C00D59FDF /* ICOContactosCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOContactosCustomCell.swift; sourceTree = "<group>"; };
+		631F46A61E3D050F00D59FDF /* ICOPerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOPerfilViewController.swift; sourceTree = "<group>"; };
 		63FFBC551E2D80FC0097246A /* App_LoginBat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_LoginBat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FFBC581E2D80FC0097246A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63FFBC5A1E2D80FC0097246A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63FFBC5D1E2D80FC0097246A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63FFBC5F1E2D80FC0097246A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63FFBC621E2D80FC0097246A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63FFBC641E2D80FC0097246A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63FFBC6A1E2D8BD70097246A /* CICIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CICIntroViewController.swift; sourceTree = "<group>"; };
+		63FFBC6C1E2D8BE40097246A /* CICLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CICLoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +83,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		631F466A1E33B6BA00D59FDF /* VIEW_CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+				631F469B1E33C05500D59FDF /* VC_CONTACTOS */,
+				631F46941E33C02E00D59FDF /* VC_TAREAS */,
+				631F46931E33C02600D59FDF /* VC_INTRO */,
+			);
+			name = VIEW_CONTROLLERS;
+			sourceTree = "<group>";
+		};
+		631F46931E33C02600D59FDF /* VC_INTRO */ = {
+			isa = PBXGroup;
+			children = (
+				63FFBC6A1E2D8BD70097246A /* CICIntroViewController.swift */,
+				63FFBC6C1E2D8BE40097246A /* CICLoginViewController.swift */,
+				631F466B1E33B6E100D59FDF /* CICHomeTabBarControllerViewController.swift */,
+			);
+			name = VC_INTRO;
+			sourceTree = "<group>";
+		};
+		631F46941E33C02E00D59FDF /* VC_TAREAS */ = {
+			isa = PBXGroup;
+			children = (
+				631F46711E33BD2500D59FDF /* ICOListaTableViewController.swift */,
+				631F46721E33BD2500D59FDF /* ICODetalleCollectionViewController.swift */,
+				631F46731E33BD2500D59FDF /* ICOHeaderCollectionReusableView.swift */,
+				631F46741E33BD2500D59FDF /* ICOTaskCustomCell.swift */,
+				631F46751E33BD2500D59FDF /* ICOIconCollectionViewCell.swift */,
+			);
+			name = VC_TAREAS;
+			sourceTree = "<group>";
+		};
+		631F469B1E33C05500D59FDF /* VC_CONTACTOS */ = {
+			isa = PBXGroup;
+			children = (
+				631F46951E33C04C00D59FDF /* ICOContactosTableViewController.swift */,
+				631F46961E33C04C00D59FDF /* ICODetalleContactoViewController.swift */,
+				631F46971E33C04C00D59FDF /* ICOContactosCustomCell.swift */,
+				631F467D1E33BFA100D59FDF /* Contactos.plist */,
+			);
+			name = VC_CONTACTOS;
+			sourceTree = "<group>";
+		};
+		631F469C1E33C08700D59FDF /* IMAGES */ = {
+			isa = PBXGroup;
+			children = (
+				631F467F1E33BFC300D59FDF /* backPerfil.png */,
+				631F46801E33BFC300D59FDF /* brad-pitt.jpg */,
+				631F46811E33BFC300D59FDF /* depp.jpg */,
+				631F46821E33BFC300D59FDF /* fondodegradado.png */,
+				631F46831E33BFC300D59FDF /* kunis.jpg */,
+				631F46841E33BFC300D59FDF /* Miranda_Lambert.jpg */,
+				631F46851E33BFC300D59FDF /* Sara_Evans.jpg */,
+				631F46861E33BFC300D59FDF /* steve_jobs.jpg */,
+				631F46871E33BFC300D59FDF /* Taylor_Swift2.jpg */,
+				631F46881E33BFC300D59FDF /* thor.jpg */,
+			);
+			name = IMAGES;
+			sourceTree = "<group>";
+		};
 		63FFBC4C1E2D80FC0097246A = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +162,12 @@
 		63FFBC571E2D80FC0097246A /* App_LoginBat */ = {
 			isa = PBXGroup;
 			children = (
+				631F469C1E33C08700D59FDF /* IMAGES */,
 				63FFBC581E2D80FC0097246A /* AppDelegate.swift */,
-				63FFBC5A1E2D80FC0097246A /* ViewController.swift */,
+				631F466D1E33BCF800D59FDF /* APITaskManager.swift */,
+				631F466E1E33BCF800D59FDF /* APIUTils.swift */,
+				631F46A61E3D050F00D59FDF /* ICOPerfilViewController.swift */,
+				631F466A1E33B6BA00D59FDF /* VIEW_CONTROLLERS */,
 				63FFBC5C1E2D80FC0097246A /* Main.storyboard */,
 				63FFBC5F1E2D80FC0097246A /* Assets.xcassets */,
 				63FFBC611E2D80FC0097246A /* LaunchScreen.storyboard */,
@@ -97,6 +209,7 @@
 					63FFBC541E2D80FC0097246A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 2C7W4RF846;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,8 +238,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				63FFBC631E2D80FC0097246A /* LaunchScreen.storyboard in Resources */,
+				631F46891E33BFC300D59FDF /* backPerfil.png in Resources */,
+				631F46911E33BFC300D59FDF /* Taylor_Swift2.jpg in Resources */,
 				63FFBC601E2D80FC0097246A /* Assets.xcassets in Resources */,
+				631F46921E33BFC300D59FDF /* thor.jpg in Resources */,
+				631F468F1E33BFC300D59FDF /* Sara_Evans.jpg in Resources */,
 				63FFBC5E1E2D80FC0097246A /* Main.storyboard in Resources */,
+				631F468E1E33BFC300D59FDF /* Miranda_Lambert.jpg in Resources */,
+				631F468B1E33BFC300D59FDF /* depp.jpg in Resources */,
+				631F467E1E33BFA100D59FDF /* Contactos.plist in Resources */,
+				631F468D1E33BFC300D59FDF /* kunis.jpg in Resources */,
+				631F46901E33BFC300D59FDF /* steve_jobs.jpg in Resources */,
+				631F468C1E33BFC300D59FDF /* fondodegradado.png in Resources */,
+				631F468A1E33BFC300D59FDF /* brad-pitt.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +261,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63FFBC5B1E2D80FC0097246A /* ViewController.swift in Sources */,
 				63FFBC591E2D80FC0097246A /* AppDelegate.swift in Sources */,
+				631F466F1E33BCF800D59FDF /* APITaskManager.swift in Sources */,
+				631F46991E33C04C00D59FDF /* ICODetalleContactoViewController.swift in Sources */,
+				631F466C1E33B6E100D59FDF /* CICHomeTabBarControllerViewController.swift in Sources */,
+				631F46761E33BD2500D59FDF /* ICOListaTableViewController.swift in Sources */,
+				631F46981E33C04C00D59FDF /* ICOContactosTableViewController.swift in Sources */,
+				631F46771E33BD2500D59FDF /* ICODetalleCollectionViewController.swift in Sources */,
+				63FFBC6D1E2D8BE40097246A /* CICLoginViewController.swift in Sources */,
+				631F46781E33BD2500D59FDF /* ICOHeaderCollectionReusableView.swift in Sources */,
+				631F46A71E3D051000D59FDF /* ICOPerfilViewController.swift in Sources */,
+				631F469A1E33C04C00D59FDF /* ICOContactosCustomCell.swift in Sources */,
+				631F467A1E33BD2500D59FDF /* ICOIconCollectionViewCell.swift in Sources */,
+				631F46791E33BD2500D59FDF /* ICOTaskCustomCell.swift in Sources */,
+				631F46701E33BCF800D59FDF /* APIUTils.swift in Sources */,
+				63FFBC6B1E2D8BD70097246A /* CICIntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +437,7 @@
 				63FFBC691E2D80FC0097246A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
