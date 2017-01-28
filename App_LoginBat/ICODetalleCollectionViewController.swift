@@ -20,18 +20,18 @@ class ICODetalleCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_compra" , CONSTANTES.KEY_TITULO : "Compra"])
-        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_economia" , CONSTANTES.KEY_TITULO : "Economia"])
-        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_amigos" , CONSTANTES.KEY_TITULO : "Amigos"])
-        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_amor" , CONSTANTES.KEY_TITULO : "Amor"])
-        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_archivos" , CONSTANTES.KEY_TITULO : "Archivos"])
-        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_deportes" , CONSTANTES.KEY_TITULO : "Deportes"])
-        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_fechas" , CONSTANTES.KEY_TITULO : "Calendario"])
-        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_ideas" , CONSTANTES.KEY_TITULO : "Ideas"])
-        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_lugares" , CONSTANTES.KEY_TITULO : "Lugares"])
-        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_musica" , CONSTANTES.KEY_TITULO : "Musica"])
-        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_vacaciones" , CONSTANTES.KEY_TITULO : "Vacaciones"])
-        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_webs" , CONSTANTES.KEY_TITULO : "Webs"])
+        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_compra" as AnyObject , CONSTANTES.KEY_TITULO : "Compra" as AnyObject])
+        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_economia" as AnyObject , CONSTANTES.KEY_TITULO : "Economia" as AnyObject])
+        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_amigos" as AnyObject , CONSTANTES.KEY_TITULO : "Amigos" as AnyObject])
+        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_amor" as AnyObject , CONSTANTES.KEY_TITULO : "Amor" as AnyObject])
+        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_archivos" as AnyObject , CONSTANTES.KEY_TITULO : "Archivos" as AnyObject])
+        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_deportes" as AnyObject , CONSTANTES.KEY_TITULO : "Deportes" as AnyObject])
+        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_fechas" as AnyObject , CONSTANTES.KEY_TITULO : "Calendario" as AnyObject])
+        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_ideas" as AnyObject , CONSTANTES.KEY_TITULO : "Ideas" as AnyObject])
+        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_lugares" as AnyObject , CONSTANTES.KEY_TITULO : "Lugares" as AnyObject])
+        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_musica" as AnyObject , CONSTANTES.KEY_TITULO : "Musica" as AnyObject])
+        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_vacaciones" as AnyObject , CONSTANTES.KEY_TITULO : "Vacaciones" as AnyObject])
+        listaIconos.append([CONSTANTES.KEY_ICONO_IMAGEN: "img_icono_webs" as AnyObject , CONSTANTES.KEY_TITULO : "Webs" as AnyObject])
         
         // Do any additional setup after loading the view.
     }
@@ -50,10 +50,10 @@ class ICODetalleCollectionViewController: UICollectionViewController {
     
         let icon = listaIconos[indexPath.row]
         if let iconDes = icon[CONSTANTES.KEY_ICONO_IMAGEN]{
-            cell.myImagenIcono.image = UIImage(named: iconDes)
+            cell.myImagenIcono.image = UIImage(named: iconDes as! String)
         }
         if let textDes = icon[CONSTANTES.KEY_TITULO]{
-            cell.myTextoIcono.text = textDes
+            cell.myTextoIcono.text = (textDes as! String)
         }
     
         return cell

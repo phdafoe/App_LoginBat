@@ -10,6 +10,8 @@ import UIKit
 
 class ICOPerfilViewController: UIViewController {
     
+    let url = "http://www.andresocampo.com"
+    
     
     //MARK: - IBOUTLET
     @IBOutlet weak var degradadoImageView: UIImageView!
@@ -37,6 +39,8 @@ class ICOPerfilViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         myImagePerfilIV.layer.cornerRadius = myImagePerfilIV.frame.width / 8
         myImagePerfilIV.layer.borderColor = UIColor.white.cgColor
         myImagePerfilIV.layer.borderWidth = 1.5
@@ -60,6 +64,8 @@ class ICOPerfilViewController: UIViewController {
         myEmailLBL.text = "andres.ocampo@miotek.es"
         myLinkedinLBL.text = "andres@linkedin.com"
         myNumeroSeguidores.text = "1234M"
+        
+        
         
         
 

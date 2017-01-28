@@ -30,6 +30,7 @@
 		631F46991E33C04C00D59FDF /* ICODetalleContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46961E33C04C00D59FDF /* ICODetalleContactoViewController.swift */; };
 		631F469A1E33C04C00D59FDF /* ICOContactosCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46971E33C04C00D59FDF /* ICOContactosCustomCell.swift */; };
 		631F46A71E3D051000D59FDF /* ICOPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46A61E3D050F00D59FDF /* ICOPerfilViewController.swift */; };
+		631F46A91E3D0F2200D59FDF /* ICONuevaTareaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46A81E3D0F2200D59FDF /* ICONuevaTareaTableViewController.swift */; };
 		63FFBC591E2D80FC0097246A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FFBC581E2D80FC0097246A /* AppDelegate.swift */; };
 		63FFBC5E1E2D80FC0097246A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FFBC5C1E2D80FC0097246A /* Main.storyboard */; };
 		63FFBC601E2D80FC0097246A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FFBC5F1E2D80FC0097246A /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		631F46961E33C04C00D59FDF /* ICODetalleContactoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICODetalleContactoViewController.swift; sourceTree = "<group>"; };
 		631F46971E33C04C00D59FDF /* ICOContactosCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOContactosCustomCell.swift; sourceTree = "<group>"; };
 		631F46A61E3D050F00D59FDF /* ICOPerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOPerfilViewController.swift; sourceTree = "<group>"; };
+		631F46A81E3D0F2200D59FDF /* ICONuevaTareaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICONuevaTareaTableViewController.swift; sourceTree = "<group>"; };
 		63FFBC551E2D80FC0097246A /* App_LoginBat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_LoginBat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FFBC581E2D80FC0097246A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63FFBC5D1E2D80FC0097246A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				631F46731E33BD2500D59FDF /* ICOHeaderCollectionReusableView.swift */,
 				631F46741E33BD2500D59FDF /* ICOTaskCustomCell.swift */,
 				631F46751E33BD2500D59FDF /* ICOIconCollectionViewCell.swift */,
+				631F46A81E3D0F2200D59FDF /* ICONuevaTareaTableViewController.swift */,
 			);
 			name = VC_TAREAS;
 			sourceTree = "<group>";
@@ -118,6 +121,7 @@
 		631F469B1E33C05500D59FDF /* VC_CONTACTOS */ = {
 			isa = PBXGroup;
 			children = (
+				631F46A61E3D050F00D59FDF /* ICOPerfilViewController.swift */,
 				631F46951E33C04C00D59FDF /* ICOContactosTableViewController.swift */,
 				631F46961E33C04C00D59FDF /* ICODetalleContactoViewController.swift */,
 				631F46971E33C04C00D59FDF /* ICOContactosCustomCell.swift */,
@@ -166,7 +170,6 @@
 				63FFBC581E2D80FC0097246A /* AppDelegate.swift */,
 				631F466D1E33BCF800D59FDF /* APITaskManager.swift */,
 				631F466E1E33BCF800D59FDF /* APIUTils.swift */,
-				631F46A61E3D050F00D59FDF /* ICOPerfilViewController.swift */,
 				631F466A1E33B6BA00D59FDF /* VIEW_CONTROLLERS */,
 				63FFBC5C1E2D80FC0097246A /* Main.storyboard */,
 				63FFBC5F1E2D80FC0097246A /* Assets.xcassets */,
@@ -276,6 +279,7 @@
 				631F46791E33BD2500D59FDF /* ICOTaskCustomCell.swift in Sources */,
 				631F46701E33BCF800D59FDF /* APIUTils.swift in Sources */,
 				63FFBC6B1E2D8BD70097246A /* CICIntroViewController.swift in Sources */,
+				631F46A91E3D0F2200D59FDF /* ICONuevaTareaTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,7 @@ class ICOListaTableViewController: UITableViewController {
     //MARK: - IBActions
     @IBAction func añadirNuevaTarea(_ sender: Any) {
         
-        let alertVC = UIAlertController(title: "Nueva tarea", message: "Nombre de la Tarea", preferredStyle: .alert)
+        /*let alertVC = UIAlertController(title: "Nueva tarea", message: "Nombre de la Tarea", preferredStyle: .alert)
         alertVC.addTextField(configurationHandler: nil)
         alertVC.addAction(UIAlertAction(title: "Guardar", style: .default, handler: { (alertAction) in
             
@@ -25,7 +25,12 @@ class ICOListaTableViewController: UITableViewController {
             
         }))
         alertVC.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
-        present(alertVC, animated: true, completion: nil)
+        present(alertVC, animated: true, completion: nil)*/
+        
+        let nuevoPostVC = self.storyboard?.instantiateViewController(withIdentifier: "NuevaTareaTableViewController") as! ICONuevaTareaTableViewController
+        let navController = UINavigationController(rootViewController: nuevoPostVC)
+        self.present(navController, animated: true, completion: nil)
+        
     }
     
     
@@ -64,9 +69,9 @@ class ICOListaTableViewController: UITableViewController {
 
         let task = taskManager.tasks[indexPath.row]
         
-        cell.myTextoTarea.text = task[CONSTANTES.KEY_TITULO]
+        cell.myTextoTarea.text = task[CONSTANTES.KEY_TITULO] as! String?
         if let imageDes = task[CONSTANTES.KEY_ICONO_IMAGEN]{
-            cell.myImagenIconTarea.image = UIImage(named: imageDes)
+            cell.myImagenIconTarea.image = UIImage(named: imageDes as! String)
         }else{
             cell.myImagenIconTarea.image = UIImage(named: "img_no_icon")
         }
@@ -99,7 +104,7 @@ class ICOListaTableViewController: UITableViewController {
             if let indexPathDes = self.tableView.indexPathForSelectedRow{
                 let destinationVC = segue.destination as! ICODetalleCollectionViewController
                 let tareaSeleccionada = taskManager.tasks[indexPathDes.row]
-                destinationVC.headerTitleString = tareaSeleccionada[CONSTANTES.KEY_TITULO]
+                destinationVC.headerTitleString = tareaSeleccionada[CONSTANTES.KEY_TITULO] as! String?
                 destinationVC.selectedTask = indexPathDes.row
             }
         }

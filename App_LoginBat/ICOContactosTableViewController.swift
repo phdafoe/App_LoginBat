@@ -62,7 +62,7 @@ class ICOContactosTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ICOContactosCustomCell
 
         // Configure the cell...
-        dictionarioContactos = arrayContactos[indexPath.row]
+        dictionarioContactos = arrayContactos[indexPath.row] as! jsonStandard
         
         let firstName = dictionarioContactos["firstName"]
         let lastName = dictionarioContactos["lastName"]
@@ -80,7 +80,7 @@ class ICOContactosTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detalleContactosVC = self.storyboard?.instantiateViewController(withIdentifier: "detalleContactosVC") as! ICODetalleContactoViewController
-        dictionarioContactos = arrayContactos[indexPath.row]
+        dictionarioContactos = arrayContactos[indexPath.row] as! jsonStandard
         detalleContactosVC.diccionarioData = dictionarioContactos
         self.navigationController?.pushViewController(detalleContactosVC, animated: true)
     }
