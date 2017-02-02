@@ -34,6 +34,8 @@ class CICLoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationCenter.addObserver(<#T##observer: NSObject##NSObject#>, forKeyPath: <#T##String#>, options: <#T##NSKeyValueObservingOptions#>, context: <#T##UnsafeMutableRawPointer?#>)
+        
         myEntrarBTN.layer.cornerRadius = 3
         
         objetosSinOpacidad()

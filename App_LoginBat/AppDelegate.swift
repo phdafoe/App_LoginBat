@@ -10,6 +10,9 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var puedoRotar = false
+    var orientacionDisponible : UIInterfaceOrientationMask = .portrait
 
     var window: UIWindow?
 
@@ -45,6 +48,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Aqui salvamos los datos
         APITaskManager.sharedInstance.salvarDatos()
     }
+    
+    //MARK: - Orientacion del dispositivo
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        if puedoRotar == true{
+            return .all
+        }else{
+            return orientacionDisponible
+        }
+    }
+    
+    func setDisponibilidadOrientaciones(orientationMask:UIInterfaceOrientationMask,
+                                  defaultOrientation:UIInterfaceOrientation) {
+        self.orientacionDisponible = orientationMask;
+        if ((orientationMask.rawValue & UInt(UIDevice.current.orientation.rawValue)) == 0) {
+            UIDevice.current.setValue(defaultOrientation.rawValue, forKey: "orientation")
+        }
+    }
+    
 
 
 }

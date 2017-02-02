@@ -1,21 +1,18 @@
 //
-//  ICOTaskCustomCell.swift
-//  AppRecordar1.0
+//  ICOTareaCustomCell.swift
+//  App_LoginBat
 //
-//  Created by User on 6/1/17.
+//  Created by User on 31/1/17.
 //  Copyright © 2017 icologic. All rights reserved.
 //
 
 import UIKit
 
-class ICOTaskCustomCell: UITableViewCell {
+class ICOTareaCustomCell: UITableViewCell {
     
-    
-    //MARK: - IBOutlet
-    @IBOutlet weak var myImagenIconTarea: UIImageView!
-    @IBOutlet weak var myTextoTarea: UILabel!
-    
-    
+    @IBOutlet weak var myIconoTarea: UIImageView!
+    @IBOutlet weak var myDescripcionLBL: UILabel!
+    @IBOutlet weak var myImagenTarea: UIImageView!
     
 
     override func awakeFromNib() {
@@ -28,5 +25,5 @@ class ICOTaskCustomCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }

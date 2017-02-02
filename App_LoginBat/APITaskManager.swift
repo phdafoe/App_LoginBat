@@ -25,6 +25,7 @@ class APITaskManager{
         CONSTANTES.USER_DEFAULT.set(descripcionTask, forKey: CONSTANTES.KEY_DESCRIPCION)
         CONSTANTES.USER_DEFAULT.set(prioridadTask, forKey: CONSTANTES.KEY_PRIORIDAD_TAREA)
         CONSTANTES.USER_DEFAULT.set(fotoTarea, forKey: CONSTANTES.KEY_IMAGEN_TAREA)
+        //cargarDatos()
     }
     
     

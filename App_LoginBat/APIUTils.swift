@@ -21,7 +21,7 @@ struct Constantes {
     
     let KEY_TAREAS = "tasks"
     let KEY_TITULO = "titulo"
-    let KEY_ICONO_IMAGEN = "imagen"
+    let KEY_ICONO_IMAGEN = "icono"
     
     let KEY_USERNAME = "username"
     let KEY_CONTRASEGNA = "contraseña"

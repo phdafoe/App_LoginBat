@@ -13,7 +13,6 @@
 		631F46761E33BD2500D59FDF /* ICOListaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46711E33BD2500D59FDF /* ICOListaTableViewController.swift */; };
 		631F46771E33BD2500D59FDF /* ICODetalleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46721E33BD2500D59FDF /* ICODetalleCollectionViewController.swift */; };
 		631F46781E33BD2500D59FDF /* ICOHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46731E33BD2500D59FDF /* ICOHeaderCollectionReusableView.swift */; };
-		631F46791E33BD2500D59FDF /* ICOTaskCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46741E33BD2500D59FDF /* ICOTaskCustomCell.swift */; };
 		631F467A1E33BD2500D59FDF /* ICOIconCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46751E33BD2500D59FDF /* ICOIconCollectionViewCell.swift */; };
 		631F467E1E33BFA100D59FDF /* Contactos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 631F467D1E33BFA100D59FDF /* Contactos.plist */; };
 		631F46891E33BFC300D59FDF /* backPerfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 631F467F1E33BFC300D59FDF /* backPerfil.png */; };
@@ -31,6 +30,9 @@
 		631F469A1E33C04C00D59FDF /* ICOContactosCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46971E33C04C00D59FDF /* ICOContactosCustomCell.swift */; };
 		631F46A71E3D051000D59FDF /* ICOPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46A61E3D050F00D59FDF /* ICOPerfilViewController.swift */; };
 		631F46A91E3D0F2200D59FDF /* ICONuevaTareaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F46A81E3D0F2200D59FDF /* ICONuevaTareaTableViewController.swift */; };
+		636B33361E40EA3200CE4582 /* ICOTareaCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636B33341E40EA3200CE4582 /* ICOTareaCustomCell.swift */; };
+		636B33371E40EA3200CE4582 /* ICOTareaCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636B33351E40EA3200CE4582 /* ICOTareaCustomCell.xib */; };
+		636B33391E438C2000CE4582 /* ICOWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636B33381E438C2000CE4582 /* ICOWebViewController.swift */; };
 		63FFBC591E2D80FC0097246A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FFBC581E2D80FC0097246A /* AppDelegate.swift */; };
 		63FFBC5E1E2D80FC0097246A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FFBC5C1E2D80FC0097246A /* Main.storyboard */; };
 		63FFBC601E2D80FC0097246A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FFBC5F1E2D80FC0097246A /* Assets.xcassets */; };
@@ -46,7 +48,6 @@
 		631F46711E33BD2500D59FDF /* ICOListaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOListaTableViewController.swift; sourceTree = "<group>"; };
 		631F46721E33BD2500D59FDF /* ICODetalleCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICODetalleCollectionViewController.swift; sourceTree = "<group>"; };
 		631F46731E33BD2500D59FDF /* ICOHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
-		631F46741E33BD2500D59FDF /* ICOTaskCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOTaskCustomCell.swift; sourceTree = "<group>"; };
 		631F46751E33BD2500D59FDF /* ICOIconCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOIconCollectionViewCell.swift; sourceTree = "<group>"; };
 		631F467D1E33BFA100D59FDF /* Contactos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Contactos.plist; sourceTree = "<group>"; };
 		631F467F1E33BFC300D59FDF /* backPerfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backPerfil.png; sourceTree = "<group>"; };
@@ -64,6 +65,9 @@
 		631F46971E33C04C00D59FDF /* ICOContactosCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOContactosCustomCell.swift; sourceTree = "<group>"; };
 		631F46A61E3D050F00D59FDF /* ICOPerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOPerfilViewController.swift; sourceTree = "<group>"; };
 		631F46A81E3D0F2200D59FDF /* ICONuevaTareaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICONuevaTareaTableViewController.swift; sourceTree = "<group>"; };
+		636B33341E40EA3200CE4582 /* ICOTareaCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOTareaCustomCell.swift; sourceTree = "<group>"; };
+		636B33351E40EA3200CE4582 /* ICOTareaCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICOTareaCustomCell.xib; sourceTree = "<group>"; };
+		636B33381E438C2000CE4582 /* ICOWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOWebViewController.swift; sourceTree = "<group>"; };
 		63FFBC551E2D80FC0097246A /* App_LoginBat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_LoginBat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FFBC581E2D80FC0097246A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63FFBC5D1E2D80FC0097246A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,9 +113,10 @@
 			isa = PBXGroup;
 			children = (
 				631F46711E33BD2500D59FDF /* ICOListaTableViewController.swift */,
+				636B33341E40EA3200CE4582 /* ICOTareaCustomCell.swift */,
+				636B33351E40EA3200CE4582 /* ICOTareaCustomCell.xib */,
 				631F46721E33BD2500D59FDF /* ICODetalleCollectionViewController.swift */,
 				631F46731E33BD2500D59FDF /* ICOHeaderCollectionReusableView.swift */,
-				631F46741E33BD2500D59FDF /* ICOTaskCustomCell.swift */,
 				631F46751E33BD2500D59FDF /* ICOIconCollectionViewCell.swift */,
 				631F46A81E3D0F2200D59FDF /* ICONuevaTareaTableViewController.swift */,
 			);
@@ -125,6 +130,7 @@
 				631F46951E33C04C00D59FDF /* ICOContactosTableViewController.swift */,
 				631F46961E33C04C00D59FDF /* ICODetalleContactoViewController.swift */,
 				631F46971E33C04C00D59FDF /* ICOContactosCustomCell.swift */,
+				636B33381E438C2000CE4582 /* ICOWebViewController.swift */,
 				631F467D1E33BFA100D59FDF /* Contactos.plist */,
 			);
 			name = VC_CONTACTOS;
@@ -240,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				636B33371E40EA3200CE4582 /* ICOTareaCustomCell.xib in Resources */,
 				63FFBC631E2D80FC0097246A /* LaunchScreen.storyboard in Resources */,
 				631F46891E33BFC300D59FDF /* backPerfil.png in Resources */,
 				631F46911E33BFC300D59FDF /* Taylor_Swift2.jpg in Resources */,
@@ -267,16 +274,17 @@
 				63FFBC591E2D80FC0097246A /* AppDelegate.swift in Sources */,
 				631F466F1E33BCF800D59FDF /* APITaskManager.swift in Sources */,
 				631F46991E33C04C00D59FDF /* ICODetalleContactoViewController.swift in Sources */,
+				636B33361E40EA3200CE4582 /* ICOTareaCustomCell.swift in Sources */,
 				631F466C1E33B6E100D59FDF /* CICHomeTabBarControllerViewController.swift in Sources */,
 				631F46761E33BD2500D59FDF /* ICOListaTableViewController.swift in Sources */,
 				631F46981E33C04C00D59FDF /* ICOContactosTableViewController.swift in Sources */,
 				631F46771E33BD2500D59FDF /* ICODetalleCollectionViewController.swift in Sources */,
 				63FFBC6D1E2D8BE40097246A /* CICLoginViewController.swift in Sources */,
 				631F46781E33BD2500D59FDF /* ICOHeaderCollectionReusableView.swift in Sources */,
+				636B33391E438C2000CE4582 /* ICOWebViewController.swift in Sources */,
 				631F46A71E3D051000D59FDF /* ICOPerfilViewController.swift in Sources */,
 				631F469A1E33C04C00D59FDF /* ICOContactosCustomCell.swift in Sources */,
 				631F467A1E33BD2500D59FDF /* ICOIconCollectionViewCell.swift in Sources */,
-				631F46791E33BD2500D59FDF /* ICOTaskCustomCell.swift in Sources */,
 				631F46701E33BCF800D59FDF /* APIUTils.swift in Sources */,
 				63FFBC6B1E2D8BD70097246A /* CICIntroViewController.swift in Sources */,
 				631F46A91E3D0F2200D59FDF /* ICONuevaTareaTableViewController.swift in Sources */,

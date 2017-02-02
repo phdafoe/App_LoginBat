@@ -10,7 +10,7 @@ import UIKit
 
 class ICOPerfilViewController: UIViewController {
     
-    let url = "http://www.andresocampo.com"
+    let urlData = "http://www.andresocampo.com"
     
     
     //MARK: - IBOUTLET
@@ -32,6 +32,12 @@ class ICOPerfilViewController: UIViewController {
 
     @IBAction func ocultaVC(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func muestraWeb(_ sender: Any) {
+        
+        
     }
     
     
@@ -78,14 +84,21 @@ class ICOPerfilViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "muestraWebVC"{
+            let webVC = segue.destination as! ICOWebViewController
+            webVC.urlString = urlData
+        }
+        
+        
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

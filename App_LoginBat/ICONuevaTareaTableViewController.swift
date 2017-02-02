@@ -70,12 +70,24 @@ class ICONuevaTareaTableViewController: UITableViewController {
 
    
     func salvarDatos(){
-        let imageData = UIImageJPEGRepresentation(myImagenPost.image!, 0.1)
-        taskManager.tasks.append([CONSTANTES.KEY_TITULO : myDescripcionFotoTip.text as AnyObject])
-        taskManager.fotoTarea.append([CONSTANTES.KEY_IMAGEN_TAREA : imageData as AnyObject])
-        taskManager.descripcionTask.append([CONSTANTES.KEY_DESCRIPCION : myDescripcionFotoTip.text as AnyObject])
-        taskManager.prioridadTask.append([CONSTANTES.KEY_PRIORIDAD_TAREA : myDescripcionFotoTip.text as AnyObject])
-        dismiss(animated: true, completion: nil)
+        if myDescripcionFotoTip.text != "" && myImagenPost.image != nil{
+            let imageData = UIImageJPEGRepresentation(myImagenPost.image!, 0.1)
+            taskManager.tasks.append([CONSTANTES.KEY_TITULO : myDescripcionFotoTip.text as AnyObject])
+            taskManager.fotoTarea.append([CONSTANTES.KEY_IMAGEN_TAREA : imageData as AnyObject])
+            
+            //taskManager.descripcionTask.append([CONSTANTES.KEY_DESCRIPCION : myDescripcionFotoTip.text as AnyObject])
+            //taskManager.prioridadTask.append([CONSTANTES.KEY_PRIORIDAD_TAREA : myDescripcionFotoTip.text as AnyObject])
+            dismiss(animated: true, completion: nil)
+        }else{
+            present(muestraVC(myTitleData: "Atención",
+                              myMessageData: "Selecciona rellena todos los campos",
+                              myTitleAction: "OK"),
+                    animated: true,
+                    completion: nil)
+        }
+        
+        
+       
     }
     
     func bajarTeclado(){

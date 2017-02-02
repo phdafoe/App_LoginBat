@@ -14,29 +14,28 @@ class ICOListaTableViewController: UITableViewController {
     //MARK: - IBActions
     @IBAction func añadirNuevaTarea(_ sender: Any) {
         
-        /*let alertVC = UIAlertController(title: "Nueva tarea", message: "Nombre de la Tarea", preferredStyle: .alert)
-        alertVC.addTextField(configurationHandler: nil)
-        alertVC.addAction(UIAlertAction(title: "Guardar", style: .default, handler: { (alertAction) in
-            
-            if let textFieldTextDes = alertVC.textFields?.first?.text{
-                taskManager.tasks.append([CONSTANTES.KEY_TITULO : textFieldTextDes])
-                self.tableView.reloadData()
-            }
-            
-        }))
-        alertVC.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
-        present(alertVC, animated: true, completion: nil)*/
-        
         let nuevoPostVC = self.storyboard?.instantiateViewController(withIdentifier: "NuevaTareaTableViewController") as! ICONuevaTareaTableViewController
         let navController = UINavigationController(rootViewController: nuevoPostVC)
         self.present(navController, animated: true, completion: nil)
         
     }
     
+    @IBAction func limpiaUserDefault(_ sender: Any) {
+        
+        print("Aqui")
+        CONSTANTES.USER_DEFAULT.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
+        
+    }
+    
+    
+    
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.register(UINib(nibName: "ICOTareaCustomCell", bundle: nil), forCellReuseIdentifier: "TareaCustomCell")
+        
 
     }
     
@@ -65,32 +64,52 @@ class ICOListaTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ICOTaskCustomCell
+        let tareaCustomCell = tableView.dequeueReusableCell(withIdentifier: "TareaCustomCell", for: indexPath) as! ICOTareaCustomCell
 
-        let task = taskManager.tasks[indexPath.row]
+        let tareas = taskManager.tasks[indexPath.row]
+        let fotoTareas = taskManager.fotoTarea[indexPath.row]
+
         
-        cell.myTextoTarea.text = task[CONSTANTES.KEY_TITULO] as! String?
-        if let imageDes = task[CONSTANTES.KEY_ICONO_IMAGEN]{
-            cell.myImagenIconTarea.image = UIImage(named: imageDes as! String)
+        tareaCustomCell.myDescripcionLBL.text = tareas[CONSTANTES.KEY_TITULO] as! String?
+        
+        if let imagenDes = tareas[CONSTANTES.KEY_ICONO_IMAGEN]{
+            tareaCustomCell.myIconoTarea.image = UIImage(named: imagenDes as! String)
         }else{
-            cell.myImagenIconTarea.image = UIImage(named: "img_no_icon")
+            tareaCustomCell.myIconoTarea.image = UIImage(named: "img_no_icon")
         }
         
-        return cell
+        
+        if let imagenTareaDes = fotoTareas[CONSTANTES.KEY_IMAGEN_TAREA]{
+            let storage = imagenTareaDes
+            tareaCustomCell.myImagenTarea.image = UIImage(data: storage as! Data)
+        }
+        
+        return tareaCustomCell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 405
     }
     
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
         let borrar = UITableViewRowAction(style: .normal, title: "Borrar", handler: { (action, indexPath)  in
             taskManager.tasks.remove(at: indexPath.row)
+            taskManager.fotoTarea.remove(at: indexPath.row)
             self.tableView.reloadData()
         })
         borrar.backgroundColor = CONSTANTES.COLOR_BORRAR_AZUL
         return [borrar]
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let indexPathDes = self.tableView.indexPathForSelectedRow{
+            let destinationVC = storyboard?.instantiateViewController(withIdentifier: "DetalleCollectionViewController") as! ICODetalleCollectionViewController
+            let tareaSeleccionada = taskManager.tasks[indexPathDes.row]
+            destinationVC.headerTitleString = tareaSeleccionada[CONSTANTES.KEY_TITULO] as! String?
+            destinationVC.selectedTask = indexPathDes.row
+            self.navigationController?.pushViewController(destinationVC, animated: true)
+        }
     }
     
 
@@ -99,7 +118,7 @@ class ICOListaTableViewController: UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueDetalle"{
             if let indexPathDes = self.tableView.indexPathForSelectedRow{
                 let destinationVC = segue.destination as! ICODetalleCollectionViewController
@@ -109,7 +128,7 @@ class ICOListaTableViewController: UITableViewController {
             }
         }
         
-    }
+    }*/
     
 
 }
