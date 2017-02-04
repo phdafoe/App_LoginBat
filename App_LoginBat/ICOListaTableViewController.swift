@@ -79,9 +79,9 @@ class ICOListaTableViewController: UITableViewController {
         }
         
         
-        if let imagenTareaDes = fotoTareas[CONSTANTES.KEY_IMAGEN_TAREA]{
+        if let imagenTareaDes = fotoTareas[CONSTANTES.KEY_IMAGEN_TAREA] as? Data{
             let storage = imagenTareaDes
-            tareaCustomCell.myImagenTarea.image = UIImage(data: storage as! Data)
+            tareaCustomCell.myImagenTarea.image = UIImage(data: storage)
         }
         
         return tareaCustomCell

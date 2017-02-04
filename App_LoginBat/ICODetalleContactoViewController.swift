@@ -11,7 +11,7 @@ import UIKit
 class ICODetalleContactoViewController: UIViewController {
 
     //MARK: - VARIABLES LOCALES GLOBALES
-    var diccionarioData : jsonStandard = [:]
+    var diccionarioData : diccionario = [:]
     
     
     //MARK: - IBOUTLET
@@ -52,26 +52,26 @@ class ICODetalleContactoViewController: UIViewController {
         degradadoImageView.clipsToBounds = true
         
         let imagePerfil = diccionarioData["imageProfile"]
-        let imagePerfilCustom = UIImage(named: imagePerfil!)
+        let imagePerfilCustom = UIImage(named: imagePerfil! as! String)
         
-        myFondoPerfil.image = UIImage(named: diccionarioData["imagePost"]!)
+        myFondoPerfil.image = UIImage(named: diccionarioData["imagePost"]! as! String)
                 
         myImagePerfilIV.image = imagePerfilCustom
-        myNombreLBL.text = diccionarioData["firstName"]
-        myApellidoLBL.text = diccionarioData["lastName"]
-        myTwitterCountLBL.text = diccionarioData["usernameTwitter"]
-        myCreadoEnLBL.text = diccionarioData["createdPost"]
-        myExpeirenciaLBL.text = diccionarioData["experienciaCV"]
-        myDescripcionLBL.text = diccionarioData["description"]
-        myTelefonoMovilLBL.text = diccionarioData["telefonoMovil"]
-        myTrabajoLBL.text = diccionarioData["telefonoTrabajo"]
-        myEmailLBL.text = diccionarioData["email"]
-        myLinkedinLBL.text = diccionarioData["cuentaLinkedin"]
-        myNumeroSeguidores.text = diccionarioData["numeroSeguidores"]
+        myNombreLBL.text = diccionarioData["firstName"] as! String?
+        myApellidoLBL.text = diccionarioData["lastName"] as! String?
+        myTwitterCountLBL.text = diccionarioData["usernameTwitter"] as! String?
+        myCreadoEnLBL.text = diccionarioData["createdPost"] as! String?
+        myExpeirenciaLBL.text = diccionarioData["experienciaCV"] as! String?
+        myDescripcionLBL.text = diccionarioData["description"] as! String?
+        myTelefonoMovilLBL.text = diccionarioData["telefonoMovil"] as! String?
+        myTrabajoLBL.text = diccionarioData["telefonoTrabajo"] as! String?
+        myEmailLBL.text = diccionarioData["email"] as! String?
+        myLinkedinLBL.text = diccionarioData["cuentaLinkedin"] as! String?
+        myNumeroSeguidores.text = diccionarioData["numeroSeguidores"] as! String?
         
         
         
-        self.title = diccionarioData["firstName"]
+        self.title = diccionarioData["firstName"] as! String?
 
         // Do any additional setup after loading the view.
     }

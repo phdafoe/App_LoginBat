@@ -34,7 +34,9 @@ class CICLoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NotificationCenter.addObserver(<#T##observer: NSObject##NSObject#>, forKeyPath: <#T##String#>, options: <#T##NSKeyValueObservingOptions#>, context: <#T##UnsafeMutableRawPointer?#>)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         
         myEntrarBTN.layer.cornerRadius = 3
         
@@ -109,18 +111,33 @@ class CICLoginViewController: UIViewController {
         
     }
     
+    
+    func keyboardWillShow(_ notification: Notification) {
+        if let keyboardSize = ((notification as NSNotification).userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if view.frame.origin.y == 0{
+                self.view.frame.origin.y -= keyboardSize.height - 100
+            }
+            else {
+                
+            }
+        }
+        
+    }
+    
+    func keyboardWillHide(_ notification: Notification) {
+        if let keyboardSize = ((notification as NSNotification).userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if view.frame.origin.y != 0 {
+                self.view.frame.origin.y += keyboardSize.height - 100
+            }
+            else {
+                
+            }
+        }
+    }
+
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
     
-    
-    
-    
-    
-    
-   
-    
-    
-    
-
 }

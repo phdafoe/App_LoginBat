@@ -58,14 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    func setDisponibilidadOrientaciones(orientationMask:UIInterfaceOrientationMask,
-                                  defaultOrientation:UIInterfaceOrientation) {
-        self.orientacionDisponible = orientationMask;
-        if ((orientationMask.rawValue & UInt(UIDevice.current.orientation.rawValue)) == 0) {
-            UIDevice.current.setValue(defaultOrientation.rawValue, forKey: "orientation")
-        }
-    }
-    
+        
 
 
 }

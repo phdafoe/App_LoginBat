@@ -14,36 +14,24 @@ class APITaskManager{
     static let sharedInstance = APITaskManager()
     
     //Creamos un Array de diccionarios
-    var tasks : arrayDiccionarioJSONStandard = [[:]]
-    var descripcionTask : arrayDiccionarioJSONStandard = [[:]]
-    var prioridadTask : arrayDiccionarioJSONStandard = [[:]]
-    var fotoTarea : arrayDiccionarioJSONStandard = [[:]]
+    var tasks : arrayDiccionario = [[:]]
+    var fotoTarea : arrayDiccionario = [[:]]
     
     func salvarDatos(){
         //UserDefaults.standard.set(tasks, forKey: "tasks")
         CONSTANTES.USER_DEFAULT.set(tasks, forKey: CONSTANTES.KEY_TAREAS)
-        CONSTANTES.USER_DEFAULT.set(descripcionTask, forKey: CONSTANTES.KEY_DESCRIPCION)
-        CONSTANTES.USER_DEFAULT.set(prioridadTask, forKey: CONSTANTES.KEY_PRIORIDAD_TAREA)
         CONSTANTES.USER_DEFAULT.set(fotoTarea, forKey: CONSTANTES.KEY_IMAGEN_TAREA)
         //cargarDatos()
     }
     
     
     func cargarDatos(){
-        if let myArray = CONSTANTES.USER_DEFAULT.array(forKey: CONSTANTES.KEY_TAREAS) as? arrayDiccionarioJSONStandard{
-            //Cargaamos nuestro array de diccionario una vez lo solicitamos a UserDefault
+        if let myArray = CONSTANTES.USER_DEFAULT.array(forKey: CONSTANTES.KEY_TAREAS) as? arrayDiccionario{
+            //Cargamos nuestro array de diccionario una vez lo solicitamos a UserDefault
             tasks = myArray
         }
         
-        if let myArrayDescripcion = CONSTANTES.USER_DEFAULT.array(forKey: CONSTANTES.KEY_DESCRIPCION) as? arrayDiccionarioJSONStandard{
-            descripcionTask = myArrayDescripcion
-        }
-        
-        if let myArrayPrioridad = CONSTANTES.USER_DEFAULT.array(forKey: CONSTANTES.KEY_PRIORIDAD_TAREA) as? arrayDiccionarioJSONStandard{
-            prioridadTask = myArrayPrioridad
-        }
-        
-        if let myArrayImagenes = CONSTANTES.USER_DEFAULT.array(forKey: CONSTANTES.KEY_IMAGEN_TAREA) as? arrayDiccionarioJSONStandard{
+        if let myArrayImagenes = CONSTANTES.USER_DEFAULT.array(forKey: CONSTANTES.KEY_IMAGEN_TAREA) as? arrayDiccionario{
             fotoTarea = myArrayImagenes
         }
         

@@ -12,8 +12,8 @@ import UIKit
 //Variables Externas
 let CONSTANTES = Constantes()
 let taskManager = APITaskManager.sharedInstance
-typealias arrayDiccionarioJSONStandard = [[String : AnyObject]]
-typealias jsonStandard = [String : String]
+typealias arrayDiccionario = [diccionario]
+typealias diccionario = [String : Any]
 var cabeceraAnimacion : UIViewPropertyAnimator!
 
 
@@ -28,7 +28,6 @@ struct Constantes {
     let KEY_FONDO_PERFIL = "fondo_perfil"
     
     let KEY_DESCRIPCION = "descripcion"
-    let KEY_PRIORIDAD_TAREA = "prioridad"
     let KEY_IMAGEN_TAREA = "imagen"
     
     

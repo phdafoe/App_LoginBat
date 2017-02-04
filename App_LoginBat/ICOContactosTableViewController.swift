@@ -12,8 +12,8 @@ class ICOContactosTableViewController: UITableViewController {
     
     
     //MARK: - VARIABLES LOCALES GLOBALES
-    var arrayContactos : arrayDiccionarioJSONStandard = []
-    var dictionarioContactos : jsonStandard = [:]
+    var arrayContactos : arrayDiccionario = []
+    var dictionarioContactos : diccionario = [:]
     
     
     //MARK: - LIFE VC
@@ -33,7 +33,7 @@ class ICOContactosTableViewController: UITableViewController {
         
         
         let path = Bundle.main.path(forResource: "Contactos", ofType: "plist")
-        arrayContactos = NSArray(contentsOfFile: path!)! as! arrayDiccionarioJSONStandard
+        arrayContactos = NSArray(contentsOfFile: path!)! as! arrayDiccionario
         self.title = "Mis Contactos"
     }
     
@@ -62,16 +62,16 @@ class ICOContactosTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ICOContactosCustomCell
 
         // Configure the cell...
-        dictionarioContactos = arrayContactos[indexPath.row] as! jsonStandard
+        dictionarioContactos = arrayContactos[indexPath.row]
         
         let firstName = dictionarioContactos["firstName"]
         let lastName = dictionarioContactos["lastName"]
         let imageProfile = dictionarioContactos["imageProfile"]
         
-        let imageCustom = UIImage(named: imageProfile!)
+        let imageCustom = UIImage(named: imageProfile! as! String)
         
-        cell.myNombreLBL.text = firstName
-        cell.myApellidoLBL.text = lastName
+        cell.myNombreLBL.text = firstName as! String?
+        cell.myApellidoLBL.text = lastName as! String?
         cell.myImagenContactoIV.image = imageCustom
         
         return cell
@@ -80,7 +80,7 @@ class ICOContactosTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detalleContactosVC = self.storyboard?.instantiateViewController(withIdentifier: "detalleContactosVC") as! ICODetalleContactoViewController
-        dictionarioContactos = arrayContactos[indexPath.row] as! jsonStandard
+        dictionarioContactos = arrayContactos[indexPath.row]
         detalleContactosVC.diccionarioData = dictionarioContactos
         self.navigationController?.pushViewController(detalleContactosVC, animated: true)
     }

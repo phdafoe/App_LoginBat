@@ -34,8 +34,6 @@ class ICOWebViewController: UIViewController {
     
     @IBAction func cerrarVC(_ sender: Any) {
         batDelegate.puedoRotar = false
-        batDelegate.setDisponibilidadOrientaciones(orientationMask: .portrait, defaultOrientation: .portrait)
-        
         dismiss(animated: true, completion: nil)
     }
     
@@ -65,11 +63,7 @@ class ICOWebViewController: UIViewController {
     override var shouldAutorotate: Bool{
         return true
     }
-    //SOPORTA DISTINTAS ORIENTACIONES
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
-        return .all
-    }
-    
+        
 
     
 
