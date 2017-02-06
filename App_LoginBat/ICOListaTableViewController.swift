@@ -13,7 +13,6 @@ class ICOListaTableViewController: UITableViewController {
     
     //MARK: - IBActions
     @IBAction func añadirNuevaTarea(_ sender: Any) {
-        
         let nuevoPostVC = self.storyboard?.instantiateViewController(withIdentifier: "NuevaTareaTableViewController") as! ICONuevaTareaTableViewController
         let navController = UINavigationController(rootViewController: nuevoPostVC)
         self.present(navController, animated: true, completion: nil)
@@ -21,12 +20,9 @@ class ICOListaTableViewController: UITableViewController {
     }
     
     @IBAction func limpiaUserDefault(_ sender: Any) {
-        
-        print("Aqui")
+        print("Aqui limpia nuestro .plist")
         CONSTANTES.USER_DEFAULT.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
-        
     }
-    
     
     
     
@@ -58,7 +54,7 @@ class ICOListaTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return taskManager.tasks.count
+        return taskManager.tareas.count
     }
 
     
@@ -66,7 +62,7 @@ class ICOListaTableViewController: UITableViewController {
         
         let tareaCustomCell = tableView.dequeueReusableCell(withIdentifier: "TareaCustomCell", for: indexPath) as! ICOTareaCustomCell
 
-        let tareas = taskManager.tasks[indexPath.row]
+        let tareas = taskManager.tareas[indexPath.row]
         let fotoTareas = taskManager.fotoTarea[indexPath.row]
 
         
@@ -94,7 +90,7 @@ class ICOListaTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
         let borrar = UITableViewRowAction(style: .normal, title: "Borrar", handler: { (action, indexPath)  in
-            taskManager.tasks.remove(at: indexPath.row)
+            taskManager.tareas.remove(at: indexPath.row)
             taskManager.fotoTarea.remove(at: indexPath.row)
             self.tableView.reloadData()
         })
@@ -102,10 +98,11 @@ class ICOListaTableViewController: UITableViewController {
         return [borrar]
     }
     
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let indexPathDes = self.tableView.indexPathForSelectedRow{
             let destinationVC = storyboard?.instantiateViewController(withIdentifier: "DetalleCollectionViewController") as! ICODetalleCollectionViewController
-            let tareaSeleccionada = taskManager.tasks[indexPathDes.row]
+            let tareaSeleccionada = taskManager.tareas[indexPathDes.row]
             destinationVC.headerTitleString = tareaSeleccionada[CONSTANTES.KEY_TITULO] as! String?
             destinationVC.selectedTask = indexPathDes.row
             self.navigationController?.pushViewController(destinationVC, animated: true)

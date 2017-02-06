@@ -17,6 +17,7 @@ typealias diccionario = [String : Any]
 var cabeceraAnimacion : UIViewPropertyAnimator!
 
 
+
 struct Constantes {
     
     let KEY_TAREAS = "tasks"
@@ -53,6 +54,18 @@ func muestraAnimacion(_ myFloat : Float, myView : UIView ){
     })
     cabeceraAnimacion.startAnimation()
 }
+
+
+class APIMetodosGenericos {
+    static let sharedInstance = APIMetodosGenericos()
+    func estaEsUnaFuncion(storyboard : UIStoryboard, modal : UIViewController){
+        let detallePerfilVC = storyboard.instantiateViewController(withIdentifier: "PerfilViewController") as! ICOPerfilViewController
+        modal.present(detallePerfilVC, animated: true, completion: nil)
+    }
+}
+
+
+
 
 
 

@@ -71,7 +71,7 @@ class ICODetalleCollectionViewController: UICollectionViewController {
         let icono = listaIconos[indexPath.row]
         
         if let selectedTaskDes = selectedTask{
-            taskManager.tasks[selectedTaskDes][CONSTANTES.KEY_ICONO_IMAGEN] = icono[CONSTANTES.KEY_ICONO_IMAGEN]
+            taskManager.tareas[selectedTaskDes][CONSTANTES.KEY_ICONO_IMAGEN] = icono[CONSTANTES.KEY_ICONO_IMAGEN]
             let _ = navigationController?.popViewController(animated: true)
         }
     }

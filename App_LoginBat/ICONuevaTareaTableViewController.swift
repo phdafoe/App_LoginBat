@@ -72,7 +72,7 @@ class ICONuevaTareaTableViewController: UITableViewController {
     func salvarDatos(){
         if myDescripcionFotoTip.text != "" && myImagenPost.image != nil{
             let imageData = UIImageJPEGRepresentation(myImagenPost.image!, 0.1)
-            taskManager.tasks.append([CONSTANTES.KEY_TITULO : myDescripcionFotoTip.text  as String])
+            taskManager.tareas.append([CONSTANTES.KEY_TITULO : myDescripcionFotoTip.text  as String])
             taskManager.fotoTarea.append([CONSTANTES.KEY_IMAGEN_TAREA : imageData! as Data])
             
             //taskManager.descripcionTask.append([CONSTANTES.KEY_DESCRIPCION : myDescripcionFotoTip.text as AnyObject])

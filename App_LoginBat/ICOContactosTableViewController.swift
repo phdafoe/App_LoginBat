@@ -27,7 +27,7 @@ class ICOContactosTableViewController: UITableViewController {
         customButtonNVC.layer.cornerRadius = customButtonNVC.frame.width / 2
         customButtonNVC.imageView!.contentMode = .scaleAspectFill
         customButtonNVC.clipsToBounds = true
-        customButtonNVC.addTarget(self, action: #selector(self.muestraVCPerfilPropio), for: .touchUpInside)
+        customButtonNVC.addTarget(self, action: #selector(muestraMiPerfilGenerico), for: .touchUpInside)
         let barButtonNC = UIBarButtonItem(customView: customButtonNVC)
         navigationItem.rightBarButtonItem = barButtonNC
         
@@ -90,7 +90,13 @@ class ICOContactosTableViewController: UITableViewController {
         present(detallePerfilVC, animated: true, completion: nil)
     }
     
+    func muestraMiPerfilGenerico(){
+        APIMetodosGenericos.sharedInstance.estaEsUnaFuncion(storyboard: storyboard!, modal: self)
+    }
+
     
+
+       
     
     
 
