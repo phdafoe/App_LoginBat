@@ -189,7 +189,7 @@ extension ICONuevaTareaTableViewController : UITextViewDelegate{
     
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         let maxtext: Int = 2000
-        let comoVoy = myDescripcionFotoTip.text.characters.count + (text.characters.count - range.length)
+        let comoVoy = myDescripcionFotoTip.text.count + (text.count - range.length)
         //myContadorNegativoLBL.text = String(2000 - comoVoy)
         return comoVoy < maxtext
         
